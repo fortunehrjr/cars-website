@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cars Website</title>
+  </head>
+  <body data-barba="wrapper">
+    <header class="nav-header">
+      <h1>
+        <a href="./index.html" id="logo">Carz.</a>
+      </h1>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </header>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <section class="mustang slide">
+        <div class="hero-img">
+          <img src="./images/mustangnew2.png" alt="mustang image" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>
+              Freedom at your <span class="mustang-span">Fingertips.</span>
+            </h2>
+            <div class="title-swipe t-swipe1"></div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            voluptates consequatur laboriosam incidunt laborum illo porro
+            expedita consequuntur possimus maxime.
+          </p>
+          <a class="explore mustang-exp">Explore</a>
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+
+      <section class="Lambo slide">
+        <div class="hero-img">
+          <img src="./images/lambo2.png" alt="lambo image" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>The ultimate speed <span class="lambo-span">Machine.</span></h2>
+            <div class="title-swipe t-swipe2"></div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            voluptates consequatur laboriosam incidunt laborum illo porro
+            expedita consequuntur possimus maxime.
+          </p>
+          <a class="explore lambo-exp">Explore</a>
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+
+      <section class="porshe slide">
+        <div class="hero-img">
+          <img src="./images/porshe2.png" alt="porshe image" />
+          <div class="reveal-img"></div>
+        </div>
+        <div class="hero-desc">
+          <div class="title">
+            <h2>Fuel your <span class="porshe-span">Passion.</span></h2>
+            <div class="title-swipe t-swipe3"></div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            voluptates consequatur laboriosam incidunt laborum illo porro
+            expedita consequuntur possimus maxime.
+          </p>
+          <a href="./others/index.html" class="explore porshe-exp">Explore</a>
+          <div class="reveal-text"></div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <a href="https://www.instagram.com/fortune_hr/" target="blank"
+          ><h3>Instagram</h3></a
+        >
+        <a href="https://twitter.com/hosearamonjr" target="blank"
+          ><h3>Twitter</h3></a
+        >
+        <a
+          href="https://www.linkedin.com/in/fortune-hosea-9b46801a6/"
+          target="blank"
+        >
+          <h3>Linkedin</h3></a
+        >
+      </ul>
+      <div class="contact">
+        <h2>Stay in touch.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          autem itaque consequuntur. Aspernatur optio quibusdam totam, nesciunt
+          mollitia sit sunt eos vel? Voluptatibus, aut.
+        </p>
+      </div>
+    </nav>
+    <div class="cursor">
+      <span class="cursor-text"></span>
+    </div>
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+      integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+      integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

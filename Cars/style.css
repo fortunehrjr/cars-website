@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #17181a;
+  font-family: "montserrat", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+main {
+  position: absolute;
+}
+
+#logo {
+  color: white;
+  font-family: "abril fatface";
+}
+
+.nav-header {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  z-index: 2;
+}
+
+.line1,
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  pointer-events: none;
+}
+
+.slide {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: #17181a;
+}
+
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-basis: 25rem;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.hero-img {
+  position: relative;
+  flex: 1;
+  flex-basis: 25rem;
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mustang-span {
+  color: rgb(255, 53, 238);
+}
+.porshe-span {
+  color: rgb(22, 192, 222);
+}
+.lambo-span {
+  color: rgb(98, 63, 226);
+}
+
+.hero-desc h2 {
+  font-family: "abril fatface", sans-serif;
+  font-size: 4.5rem;
+}
+
+.hero-desc p {
+  padding: 3rem 0;
+  font-size: 1.2rem;
+  color: rgb(223, 214, 214);
+}
+.explore {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  color: white;
+  border: 1px solid wheat;
+  font-size: 1rem;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.nav-links {
+  font-size: 3rem;
+  flex-basis: 30rem;
+}
+.nav-links h3 {
+  padding: 3rem 0rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #17171a;
+  transition: all 300ms ease-in-out;
+}
+.nav-links a:hover {
+  text-decoration: none;
+  color: #174fc0a2;
+}
+.contact {
+  flex-basis: 30rem;
+}
+.contact h2 {
+  font-size: 4rem;
+  padding: 2rem 0rem;
+}
+.contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #17181a;
+  left: 0;
+  top: -15%;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-45%, -45%);
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+  transition-property: background, transform;
+  transform-origin: 75% 75%;
+}
+
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+
+.cursor.nav-active {
+  background: rgb(255, 89, 241);
+  transform: scale(2.5);
+}
+.cursor.explore-active {
+  background: rgb(255, 255, 255);
+  transform: scale(2.5);
+}
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+}
+.title {
+  position: relative;
+  overflow: hidden;
+}
+.title-swipe {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  mix-blend-mode: darken;
+  transform: translateY(100%);
+}
+.t-swipe1 {
+  background: rgb(255, 53, 238);
+}
+.t-swipe2 {
+  background: rgb(98, 63, 226);
+}
+.t-swipe3 {
+  background: rgb(22, 192, 222);
+}
+.hide {
+  overflow: hidden;
+}
+
+/* other pages */
+
+.car1,
+.car2,
+.car3 {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+  margin-top: 0rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.car-text {
+  flex: 1;
+  position: relative;
+  flex-basis: 25rem;
+}
+
+.car-text h1 {
+  font-size: 5rem;
+  padding: 5rem 0;
+  font-family: "montserrat";
+  font-weight: bold;
+}
+
+.car1 h1 {
+  color: rgb(255, 53, 238);
+}
+
+.car2 h1 {
+  color: rgb(98, 63, 226);
+}
+
+.car3 h1 {
+  color: rgb(22, 192, 222);
+}
+
+.car-text p {
+  font-size: 1.7rem;
+  padding: 2rem 2rem 0rem 0rem;
+  margin-bottom: 16rem;
+}
+.car-num {
+  font-size: 12rem;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  color: white;
+  opacity: 0.2;
+}
+
+.swipe {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+.swipe1 {
+  background: rgb(22, 192, 222);
+
+  z-index: 5;
+}
+.swipe2 {
+  background: rgb(255, 53, 238);
+  z-index: 4;
+}
+.swipe3 {
+  background: rgb(98, 63, 226);
+  z-index: 3;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 1500px) {
+  .car-text h1 {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  .car-text p {
+    font-size: 1.2rem;
+  }
+  .car-img img {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-desc {
+    margin: 0 0 10rem 0;
+    margin-top: -5rem;
+  }
+  .hero-img {
+    transform: scale(0.6);
+    padding-bottom: 0;
+  }
+  .hero-desc h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+  }
+  .hero-desc p {
+    font-size: 1rem;
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .explore {
+    width: 60%;
+    margin: auto;
+  }
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+  .car-text p {
+    margin-bottom: 5rem;
+    padding: 0 4rem;
+    font-size: 1.1rem;
+  }
+  .car-text h1 {
+    margin: 2rem 0rem;
+    font-size: 2.4rem;
+  }
+  .car-num {
+    font-size: 8rem;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-links {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact p {
+    font-size: 1.2rem;
+    margin: 2rem;
+    text-align: center;
+  }
+}
